@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html>
-<title>Neo's Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="favicon.ico">
-<meta name="msapplication-TileColor" content="#2b5797">
-<meta name="msapplication-config" content="browserconfig.xml">
-<meta name="theme-color" content="#000000">
-<!-- End of Favicon -->
+<head>
+  <title>Neo's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Personal website showcasing Neo's portfolio">
+  <meta name="keywords" content="Personal website, Neo, Lou, Neo Lou, 
+  Student, Engineering, Enginner, University of Toronto, UofT">
+  <meta name="author" content="Neo Lou">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <meta name="theme-color" content="#000000">
+  <!-- End of Favicon -->
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://kit.fontawesome.com/09baf816ec.js" crossorigin="anonymous"></script>
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  -->
+  <script src="https://kit.fontawesome.com/09baf816ec.js" crossorigin="anonymous"></script>
+  <style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+  .w3-row-padding img {margin-bottom: 12px}
 
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {margin-left: 120px}
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  </style>
+</head>
 <body class="yellow-gradient">
 <!-- Scroll back to Top button -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i> Go to Top</button>
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  
-  <!-- <img src="neo.jpg" style="width:100%"> -->
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black height-20">
+      <div class="vertical-middle">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </div>
   </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black height-20">
+    <div class="vertical-middle">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </div>
   </a>
-  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-cogs w3-xxlarge"></i>
-    <p>PROJECTS</p>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black height-20">
+    <div class="vertical-middle">
+      <i class="fa fa-cogs w3-xxlarge"></i>
+      <p>PROJECTS</p>
+    </div>
   </a>
-  <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-file-invoice w3-xxlarge"></i>
-    <p>RESUME</p>
+  <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-black height-20">
+    <div class="vertical-middle">
+      <i class="fa fa-file-invoice w3-xxlarge"></i>
+      <p>RESUME</p>
+    </div>
   </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black height-20">
+    <div class="vertical-middle">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </div>
   </a>
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+    <a href="#" class="w3-bar-item w3-button" style="width:20%!important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
     <a href="#projects" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
     <a href="#resume" class="w3-bar-item w3-button" style="width:20% !important">RESUME</a>
@@ -75,57 +89,59 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-transparent" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Neo Lou.</h1>
-    <p class="w3-large">Undergraduate Student in the Engineering Science program at the University of Toronto</p>
-    <img src="./images/neo.png" alt="Neo" class="w3-image" width="992" height="1108" id="neo">
+    <p class="w3-large modal-text">Undergraduate Student in the Engineering Science program at the University of Toronto</p>
+    <img src="./images/neo1.png" alt="Neo Lou headshot" class="w3-image image1" width="70%" id="neo">
   </header>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-indigo w3-padding-64" id="about">
+  <div class="w3-content w3-justify w3-text-dark-grey w3-padding-64" id="about">
     <h2 class="w3-text-black">About me</h2>
       <hr style="width:170px" class="w3-opacity">
-      <p class="w3-large">I am Neo Lou, a student in the Engineering Science program at the University of Toronto.
+      <p class="w3-large modal-text">I am Neo Lou, an engineering student in the Engineering Science program at the University of Toronto.
       I enjoy learning about all kinds of emerging technologies and applying them in real-life projects.
       In my free time, I like to play music instruments, play a variety of sports, and learn new languages!
       To learn more about me, please take a look at my past projects and my resume!
       </p>
     
     <h3 class="w3-padding-16 w3-text-black">My Technical Skills</h3>
-      <h4 class="w3-wide w3-large">Programming (Python, C, MATLAB) <i class="fa fa-file-code-o w3-xlarge"></i></h4>
-        <img src="./images/python.png" alt="Python logo" style="width:18%" class="w3-padding-small w3-margin-right">
-        <img src="./images/c.png" alt="C logo" style="width:15%" class="w3-padding-small w3-margin-left w3-margin-right">
-        <img src="./images/matlab.png" alt="MATLAB logo" style="width:15%" class="w3-padding-small w3-margin-left">
+      <h4 class="w3-wide w3-large modal-header">Coding (Python, C, MATLAB, HTML, CSS, Javascript) <i class="fa fa-file-code-o w3-xlarge smallest-icons"></i></h4>
+        <img src="./images/python.png" alt="Python logo" style="width:18%" class="w3-padding-small w3-margin-right image2">
+        <img src="./images/c.png" alt="C logo" style="width:15%" class="w3-padding-small w3-margin-left w3-margin-right image2">
+        <img src="./images/matlab.png" alt="MATLAB logo" style="width:15%" class="w3-padding-small w3-margin-left image2">
+        <img src="./images/html.png" alt="MATLAB logo" style="width:24%" class="w3-padding-small w3-margin-left image3">
       
-      <h4 class="w3-wide w3-large" style="margin-top:65px">Computer-Aided Design (Solidworks, CATIA)<i class="fa fa-cubes w3-xlarge"></i></h4>
-        <img src="./images/solidworks.png" alt="Solidworks logo" style="width:20%">
-        <img src="./images/catia.png" alt="Catia logo" style="width:20%" class="w3-margin-left">
-      <h4 class="w3-wide w3-large" style="margin-top:65px">Engineering Simulation Software (NX, Ansys)<i class="fa fa-rocket w3-xlarge"></i></h4>
-        <img src="./images/nx.png" alt="NX logo" style="width:30%" class="w3-margin-right">
-        <img src="./images/ansys.png" alt="Ansys logo" style="width:30%">
+      <h4 class="w3-wide w3-large modal-header" style="margin-top:65px">Computer-Aided Design (Solidworks, CATIA)<i class="fa fa-cubes w3-xlarge smallest-icons"></i></h4>
+        <img src="./images/solidworks.png" alt="Solidworks logo" style="width:20%" class="image3">
+        <img src="./images/catia.png" alt="Catia logo" style="width:20%" class="w3-margin-left image3">
+      
+      <h4 class="w3-wide w3-large modal-header" style="margin-top:65px">Engineering Simulation Software (NX, Ansys)<i class="fa fa-rocket w3-xlarge"></i></h4>
+        <img src="./images/nx.png" alt="NX logo" style="width:30%" class="w3-margin-right image3">
+        <img src="./images/ansys.png" alt="Ansys logo" style="width:30%" class="image3">
 
-    <h3 class="w3-padding-16 w3-text-black" style="margin-top:50px">My Co-curricular Activities</h3>
+    <h3 class="w3-padding-16 w3-text-black modal-align-left" style="margin-top:50px">My Co-curricular Activities</h3>
       <div class="w3-show-inline-block" style="margin-bottom:20px">
-        <h4 class="w3-wide w3-large">Blue Sky Solar Racing (BSSR) <i class="fa fa-car w3-xlarge"></i></h4>
+        <h4 class="w3-wide w3-large modal-header">Blue Sky Solar Racing (BSSR) <i class="fa fa-car w3-xlarge"></i></h4>
           <div class="container1 w3-modal-content">
             <img src="./images/bluesky.jpg" alt="BlueSky car" class="image">
             <div class="overlay">
               <div class="text"><a href="http://blueskysolar.utoronto.ca/" target="_blank">Visit their website!</a></div>
             </div>
           </div>
-          <p class="w3-large"> Founded in 1995, the University of Toronto Blue Sky Solar Racing team is a student-led design-build team
+          <p class="w3-large modal-text"> Founded in 1995, the University of Toronto Blue Sky Solar Racing team is a student-led design-build team
           that has designed, built and raced solar powered vehicles for over 25 years. The team of over 50 diverse, 
           talented students is divided into multiple subteams, and the ones that I am part of are the <strong>structural</strong> 
           and the <strong>fabrication</strong> subteams, where we design the structural parts of the car and physically fabricate it in the workshop.</p>
       </div>
       
       <div class="w3-show-inline-block" style="margin-bottom:20px">
-        <h4 class="w3-wide w3-large">UTAT Space Systems <i class="fa fa-satellite w3-xlarge"></i></h4>
+        <h4 class="w3-wide w3-large modal-header">UTAT Space Systems <i class="fa fa-satellite w3-xlarge"></i></h4>
           <div class="container2 w3-modal-content">
             <img src="./images/utat.jpg" alt="UTAT satellite" class="image">
             <div class="overlay">
               <div class="text"><a href="https://www.utat.ca/space-systems" target="_blank">Visit their website!</a></div>
             </div>
           </div>
-          <p class="w3-large"> The University of Toronto Aerospace Team (UTAT) is an award winning design team 
+          <p class="w3-large modal-text"> The University of Toronto Aerospace Team (UTAT) is an award winning design team 
           that brings passionate undergraduates and graduates together to work on technically challenging projects 
           in aerospace. The Space Systems division is dedicated to open-source and accessible space exploration. 
           More precisely, our team engages in the design, development, and launching of small satellites—specifically 
@@ -135,14 +151,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       </div>
       
       <div class="w3-show-inline-block" style="margin-bottom:20px">
-        <h4 class="w3-wide w3-large">UTSU Board of Directors <i class="fa fa-landmark w3-xlarge"></i></h4>
+        <h4 class="w3-wide w3-large modal-header">UTSU Board of Directors <i class="fa fa-landmark w3-xlarge"></i></h4>
           <div class="container1 w3-modal-content">
             <img src="./images/utsu.jpg" alt="UTSU" class="image">
             <div class="overlay">
               <div class="text"><a href="https://www.utsu.ca/about-the-utsu/" target="_blank">Visit their website!</a></div>
             </div>
           </div>  
-          <p class="w3-large">Founded in 1901, the University of Toronto Students’ Union (UTSU) is 
+          <p class="w3-large modal-text">Founded in 1901, the University of Toronto Students’ Union (UTSU) is 
           the official student government for more than 38,000 students at the University of Toronto. 
           As a student government and independent not-for-profit organization, we operate autonomously 
           from the University of Toronto administration and strive to be a democratic, accessible, equitable
@@ -155,7 +171,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <h3 class="w3-padding-16 w3-text-black">My Interests</h3>
       <div class="w3-third" style="margin-bottom:20px">
         <h4 class="w3-center">Music performance <i class="fa fa-music"></i></h4>
-          <div style="width:90%">
+          <div class="modal-text" style="width:90%">
             <img src="./images/piano.png" alt="Piano" class="w3-image w3-padding" style="width:90%">
             <p class="w3-large">Proficient in:</p>
             <li>Piano (RCM Level 10 Piano Certificate, First Class Honours (2017))</li>
@@ -175,7 +191,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
       <div class="w3-third" style="margin-bottom:20px">
         <h4 class="w3-center">Sports <i class="fa fa-table-tennis"></i></h4>
-          <div style="width:90%">
+          <div class="modal-text" style="width:90%">
             <img src="./images/sports.png" alt="Sports" class="w3-image w3-padding">
             <p class="w3-large">Amateur Athlete:</p>
             <li>Member of Football, Swimming, Cross-Country and Ultimate Frisbee teams in high school</li>
@@ -188,7 +204,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       
       <div class="w3-third" style="margin-bottom:20px">
         <h4 class="w3-center">Languages <i class="fa fa-language"></i></h4>
-          <div style="width:100%">
+          <div class="modal-text" style="width:100%">
             <img src="./images/languages.png" alt="Languages" class="w3-image w3-padding w3-padding-top-32">
             <p class="w3-padding-top-32 w3-large">Fluent in:</p>
             <li>English</li>
@@ -205,14 +221,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
   
   <!-- Projects Section -->
-<div class="w3-content w3-padding-64 w3-justify w3-text-indigo" id="projects">
+<div class="w3-content w3-padding-64 w3-justify w3-text-dark-grey" id="projects">
   
   <div class="clearfix">
     <h2 class="w3-text-black">My Projects</h2>
     <hr style="width:200px" class="w3-opacity">
     
     <div class="w3-show-inline-block w3-modal-content" style="width:45%">
-      <h3>Gomoku (Python algorithm)</h3>
+      <h3 class="modal-bigger-header">Gomoku (Python algorithm)</h3>
       <div class="container3">
         <img src="./images/gomoku.png" alt="Gomoku" class="image">
           <div class="overlay-top">
@@ -232,7 +248,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div>
     
     <div class="w3-show-inline-block w3-modal-content" style="width:50%">
-      <h3>Seam carving (C algorithm)</h3>
+      <h3 class="modal-bigger-header">Seam carving (C algorithm)</h3>
       <div class="container3">
         <img src="./images/seamcarving.png" alt="Seam carving" class="image">
           <div class="overlay-top">
@@ -253,7 +269,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div>
 
     <div class="w3-show-inline-block w3-modal-content" style="width:100%">
-      <h3>Race car roll cage 3D-design and impact simulations</h3>
+      <h3 class="modal-bigger-header">Race car roll cage 3D-design and impact simulations</h3>
       <div class="container4">
         <img src="./images/rollcages.png" alt="Roll cage" class="image">
           <div class="overlayVid">
@@ -262,7 +278,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             </video>
           </div>
       </div>
-      <p class="w3-large">As a member of the BSSR structural subteam, I used CATIA, a CAD software
+      <p class="w3-large modal-text">As a member of the BSSR structural subteam, I used CATIA, a CAD software
       to design roll cages for the race car (A roll cage is a specially engineered and constructed 
       frame built in the passenger compartment of a vehicle to protect its occupants from 
       being injured or killed in an accident). I also ran impact simulations on the rollcages
@@ -286,11 +302,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p class="w3-large"><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Toronto, CANADA</p>
-      <p class="w3-large"><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Phone: +1 (438) 488-4959</p>
-      <p class="w3-large"><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Email: neolou2000@hotmail.com</p>
+      <p class="w3-large modal-text1"><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right smallest-icons"></i><span class="w3-hide-small"> Location: </span>Toronto, CANADA</p>
+      <p class="w3-large modal-text1"><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right smallest-icons"></i><span class="w3-hide-small"> Phone: </span>+1 (438) 488-4959</p>
+      <p class="w3-large modal-text1"><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right smallest-icons"> </i><span class="w3-hide-small"> Email: </span>neolou2000@hotmail.com</p>
     </div><br>
-    <p class="w3-large" style="padding-bottom:30px">Let's get in touch! Send me a message:</p>
+    <p class="w3-large">Let's get in touch!</p>
+    <p class="w3-large" style="padding-bottom:30px">Send me a message:</p>
 
     <form action="https://formsubmit.co/eff14d911c24a288c9f99ed176e6f447" method="POST" id="my-form">
       <p><label class="w3-large w3-wide" for="fullName">Full Name</label><input class="w3-input w3-padding-16" type="text" placeholder="e.g. John Doe" required name="Full Name" maxlength="100"></p>
@@ -312,15 +329,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <!-- Footer -->
   <footer class="w3-content w3-padding-32 w3-text-black w3-xlarge">
     <a href="https://www.facebook.com/neo.lou12" target="_blank">
-      <i class="fa fa-facebook-official w3-xxxlarge w3-hover-opacity"></i></a>
+      <i class="fa fa-facebook-official w3-xxxlarge w3-hover-opacity footer-icons"></i></a>
     <a href="https://www.instagram.com/neolou2000/" target="_blank">
-      <i class="fa fa-instagram w3-xxxlarge w3-hover-opacity"></i></a>
+      <i class="fa fa-instagram w3-xxxlarge w3-hover-opacity footer-icons"></i></a>
     <a href="https://twitter.com/neolou2000" target="_blank">
-      <i class="fa fa-twitter w3-xxxlarge w3-hover-opacity"></i></a>
+      <i class="fa fa-twitter w3-xxxlarge w3-hover-opacity footer-icons"></i></a>
     <a href="https://www.linkedin.com/in/neolou/" target="_blank">
-      <i class="fa fa-linkedin w3-xxxlarge w3-hover-opacity"></i></a>
+      <i class="fa fa-linkedin w3-xxxlarge w3-hover-opacity footer-icons"></i></a>
     <a href="https://github.com/NeoLou" target="_blank">
-      <i class="fa fa-github w3-xxxlarge w3-hover-opacity"></i></a>
+      <i class="fa fa-github w3-xxxlarge w3-hover-opacity footer-icons"></i></a>
   <!-- End footer -->
   </footer>
 
