@@ -1,12 +1,30 @@
 //Rollcage Animation
-document.getElementById("rollcageVid").addEventListener("mouseover", function() {
-	this.play();
-});
 
-document.getElementById("rollcageVid").addEventListener("mouseleave", function() {
-	this.stopVideo();
-});
 
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.getElementById("rollcageVid").addEventListener("click", function() {
+      this.play();
+    });
+    
+    document.getElementById("rollcageVid").addEventListener("click", function() {
+      this.stopVideo();
+    });
+  } else {
+    document.getElementById("rollcageVid").addEventListener("mouseover", function() {
+      this.play();
+    });
+    
+    document.getElementById("rollcageVid").addEventListener("mouseleave", function() {
+      this.stopVideo();
+    });
+}
+}
+
+var x = window.matchMedia("(max-width:600px)")
+myFunction(x) // Call listener function at run time
+x.addEventListener("change", myFunction()) // Attach listener function on state changes  
 
 //Scroll to top button
 mybutton = document.getElementById("myBtn");

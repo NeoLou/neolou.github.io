@@ -121,12 +121,15 @@
     <h3 class="w3-padding-16 w3-text-black modal-align-left" style="margin-top:50px">My Co-curricular Activities</h3>
       <div class="w3-show-inline-block" style="margin-bottom:20px">
         <h4 class="w3-wide w3-large modal-header">Blue Sky Solar Racing (BSSR) <i class="fa fa-car w3-xlarge"></i></h4>
-          <div class="container1 w3-modal-content">
-            <img src="./images/bluesky.jpg" alt="BlueSky car" class="image">
-            <div class="overlay">
-              <div class="text"><a href="http://blueskysolar.utoronto.ca/" target="_blank">Visit their website!</a></div>
+          <input type="checkbox" id="activate-div">
+            <label for="activate-div">
+            <div class="container1 w3-modal-content">
+              <img src="./images/bluesky.jpg" alt="BlueSky car" class="image">
+              <div class="overlay">
+                <div class="text"><a href="http://blueskysolar.utoronto.ca/" target="_blank">Visit their website!</a></div>
+              </div>
             </div>
-          </div>
+            </label>
           <p class="w3-large modal-text"> Founded in 1995, the University of Toronto Blue Sky Solar Racing team is a student-led design-build team
           that has designed, built and raced solar powered vehicles for over 25 years. The team of over 50 diverse, 
           talented students is divided into multiple subteams, and the ones that I am part of are the <strong>structural</strong> 
@@ -135,12 +138,15 @@
       
       <div class="w3-show-inline-block" style="margin-bottom:20px">
         <h4 class="w3-wide w3-large modal-header">UTAT Space Systems <i class="fa fa-satellite w3-xlarge"></i></h4>
-          <div class="container2 w3-modal-content">
-            <img src="./images/utat.jpg" alt="UTAT satellite" class="image">
-            <div class="overlay">
-              <div class="text"><a href="https://www.utat.ca/space-systems" target="_blank">Visit their website!</a></div>
+          <input type="checkbox" id="activate-div1">
+            <label for="activate-div1">
+            <div class="container2 w3-modal-content">
+              <img src="./images/utat.jpg" alt="UTAT satellite" class="image">
+              <div class="overlay">
+                <div class="text"><a href="https://www.utat.ca/space-systems" target="_blank">Visit their website!</a></div>
+              </div>
             </div>
-          </div>
+            </label>
           <p class="w3-large modal-text"> The University of Toronto Aerospace Team (UTAT) is an award winning design team 
           that brings passionate undergraduates and graduates together to work on technically challenging projects 
           in aerospace. The Space Systems division is dedicated to open-source and accessible space exploration. 
@@ -152,12 +158,15 @@
       
       <div class="w3-show-inline-block" style="margin-bottom:20px">
         <h4 class="w3-wide w3-large modal-header">UTSU Board of Directors <i class="fa fa-landmark w3-xlarge"></i></h4>
-          <div class="container1 w3-modal-content">
-            <img src="./images/utsu.jpg" alt="UTSU" class="image">
-            <div class="overlay">
-              <div class="text"><a href="https://www.utsu.ca/about-the-utsu/" target="_blank">Visit their website!</a></div>
+          <input type="checkbox" id="activate-div2">
+            <label for="activate-div2">
+            <div class="container1 w3-modal-content">
+              <img src="./images/utsu.jpg" alt="UTSU" class="image">
+              <div class="overlay">
+                <div class="text"><a href="https://www.utsu.ca/about-the-utsu/" target="_blank">Visit their website!</a></div>
+              </div>
             </div>
-          </div>  
+            </label>
           <p class="w3-large modal-text">Founded in 1901, the University of Toronto Students’ Union (UTSU) is 
           the official student government for more than 38,000 students at the University of Toronto. 
           As a student government and independent not-for-profit organization, we operate autonomously 
@@ -229,55 +238,64 @@
     
     <div class="w3-show-inline-block w3-modal-content" style="width:45%">
       <h3 class="modal-bigger-header">Gomoku (Python algorithm)</h3>
-      <div class="container3">
-        <img src="./images/gomoku.png" alt="Gomoku" class="image">
-          <div class="overlay-top">
-            <div class="text1">
-              <p>This is a simple (but imperfect) AI engine for the standard variation of the game Gomoku, played on a 8 × 8 board. 
-              (Gomoku is a game where players alternate turns placing a stone of their color (black or white) on an empty intersection.
-              The winner is the first player to form an unbroken chain of <strong>5</strong> stones horizontally, vertically, or diagonally.)
-              </p>
-              <div style="text-align:center; margin-top:3%">
-                <button class="w3-button w3-light-grey" type="submit" onclick="window.open('https://github.com/NeoLou/Gomoku')">
-                See the code on Github!
-                </button>
+      <input type="checkbox" id="activate-div3">
+        <label for="activate-div3">
+        <div class="container3">
+          <img src="./images/gomoku.png" alt="Gomoku" class="image">
+            <div class="overlay-top">
+              <div class="text1">
+                <p>This is a simple (but imperfect) AI engine for the standard variation of the game Gomoku, played on a 8 × 8 board. 
+                (Gomoku is a game where players alternate turns placing a stone of their color (black or white) on an empty intersection.
+                The winner is the first player to form an unbroken chain of <strong>5</strong> stones horizontally, vertically, or diagonally.)
+                </p>
+                <div style="text-align:center; margin-top:3%">
+                  <button class="w3-button w3-light-grey" type="submit" onclick="window.open('https://github.com/NeoLou/Gomoku')">
+                  See the code on Github!
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-      </div>
+        </div>
+        </label>
     </div>
     
     <div class="w3-show-inline-block w3-modal-content" style="width:50%">
       <h3 class="modal-bigger-header">Seam carving (C algorithm)</h3>
-      <div class="container3">
-        <img src="./images/seamcarving.png" alt="Seam carving" class="image">
-          <div class="overlay-top">
-            <div class="text1">
-              <p>Seam carving is a content-aware image resizing technique 
-              where the image is reduced in size by one pixel of width at a time. 
-              Unlike standard content-agnostic resizing techniques (such as cropping and scaling), 
-              seam carving preserves the most interest features (aspect ratio, set of objects present, etc.) of the image.
-              </p>
-              <div style="text-align:center; margin-top:3%">
-                <button class="w3-button w3-light-grey" type="submit" onclick="window.open('https://github.com/NeoLou/Seam-carving')">
-                See the code on Github!
-                </button>
+      <input type="checkbox" id="activate-div4">
+        <label for="activate-div4">
+        <div class="container3">
+          <img src="./images/seamcarving.png" alt="Seam carving" class="image">
+            <div class="overlay-top">
+              <div class="text1">
+                <p>Seam carving is a content-aware image resizing technique 
+                where the image is reduced in size by one pixel of width at a time. 
+                Unlike standard content-agnostic resizing techniques (such as cropping and scaling), 
+                seam carving preserves the most interest features (aspect ratio, set of objects present, etc.) of the image.
+                </p>
+                <div style="text-align:center; margin-top:3%">
+                  <button class="w3-button w3-light-grey" type="submit" onclick="window.open('https://github.com/NeoLou/Seam-carving')">
+                  See the code on Github!
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-      </div>
+        </div>
+        </label>
     </div>
 
     <div class="w3-show-inline-block w3-modal-content" style="width:100%">
       <h3 class="modal-bigger-header">Race car roll cage 3D-design and impact simulations</h3>
-      <div class="container4">
-        <img src="./images/rollcages.png" alt="Roll cage" class="image">
-          <div class="overlayVid">
-            <video id="rollcageVid" class="video">
-              <source src="./videos/rollcages.mp4" type="video/mp4">
-            </video>
-          </div>
-      </div>
+      <input type="checkbox" id="activate-div5">
+        <label for="activate-div5">
+        <div class="container4">
+          <img src="./images/rollcages.png" alt="Roll cage" class="image">
+            <div class="overlayVid">
+              <video id="rollcageVid" class="video">
+                <source src="./videos/rollcages.mp4" type="video/mp4">
+              </video>
+            </div>
+        </div>
+        </label>
       <p class="w3-large modal-text">As a member of the BSSR structural subteam, I used CATIA, a CAD software
       to design roll cages for the race car (A roll cage is a specially engineered and constructed 
       frame built in the passenger compartment of a vehicle to protect its occupants from 
