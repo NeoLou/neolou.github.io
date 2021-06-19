@@ -1,7 +1,5 @@
 //Rollcage Animation
 
-
-
 function myFunction(x) {
   if (x.matches) { // If media query matches
     document.getElementById("rollcageVid").addEventListener("click", function() {
@@ -91,4 +89,14 @@ function ajax(method, url, data, success, error) {
     }
   };
   xhr.send(data);
+}
+
+//Preventing # from appearing in URL after clicking sidebar
+
+function scrollSmoothTo(elementId) {
+  var element = document.getElementById(elementId);
+  element.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth'
+  });
 }
